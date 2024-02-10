@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacie ZChocolat</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cd89ad;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgb(185, 31, 111);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: rgb(9, 9, 9);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgb(146, 22, 59);
+        }
+
+        th {
+            background-color: rgb(49, 2, 22);
+            color: rgb(158, 47, 73);
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(43, 2, 13);
+            color: rgb(229, 76, 109);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <h1>Entrez les symptômes du patient :</h1>
+        <label for="nausee">Nausée:</label>
+        <input type="number" name="nausee" required><br>
+        <label for="toux">Toux:</label>
+        <input type="number" name="toux" required><br>
+        <label for="maux_de_tete">Maux de tête:</label>
+        <input type="number" name="maux_de_tete" required><br>
+        <label for="diarrhee">Diarrhée:</label>
+        <input type="number" name="diarrhee" required><br>
+        <button type="submit">Trouver les médicaments recommandés</button>
+    </form>
+
+    
+
+</body>
+</html>

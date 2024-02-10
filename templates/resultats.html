@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cd89ad;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(68, 4, 26);
+        }
+
+        p {
+            color: rgb(12, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <h1>Les médicaments recommandés sont :</h1>
+    {% for medicament in medicaments_optimaux %}
+        <p>{{ medicament.nom }}</p>
+    {% endfor %}
+    <p>Coût total : {{ cout_total_minimum }}</p>
+</body>
+</html>
